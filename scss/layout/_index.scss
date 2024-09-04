@@ -1,0 +1,71 @@
+/* INDEX */
+/* Textos web */
+.text-index {
+    padding-bottom: 5%;
+
+    .class-quienes {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 7%;
+        padding-top: 100px;
+        color: $color-brown;
+    }
+
+    .class-bienvenida {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 40%;
+        letter-spacing: 1px;
+        padding-left: 7%;
+        background-color: transparent;
+        padding-right: 55%;
+        color:  $color-brown;
+    }
+
+    .titulo2 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 50%;
+        padding-top: 100px;
+        background-color: transparent;
+        bottom: 25%;
+        color: $color-brown;
+    }
+
+    .parrafo2 {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 7%;
+        letter-spacing: 1px;
+        padding-left: 50%;
+        background-color: transparent;
+        bottom: 20%;
+        color: $color-brown;
+    }
+
+    .titulo3 {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 2.3em;
+        padding-left: 7%;
+        padding-top: 10%;
+        background-color: transparent;
+        color: $color-brown;
+    }
+
+    .parrafo3 {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 40%;
+        letter-spacing: 1px;
+        padding-left: 7%;
+        background-color: transparent;
+        padding-right: 55%;
+        color: $color-brown;
+        padding-bottom: 5%;
+    }
+}
+/* Fin Textos web */
+

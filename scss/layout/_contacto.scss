@@ -1,0 +1,104 @@
+/* CONTACTO */
+.formulario {
+    color: $color-whitegrey;
+    background: linear-gradient(to bottom, $color-orange,$color-green);
+    border-radius: 15px;
+
+    .form-contact {
+        text-align: center;
+        font-family:"Teko", sans-serif;
+        margin: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 3em;
+        padding: 10px;
+    }
+}
+
+form {
+background-color: transparent;
+padding: 20px 0;
+max-width: 70%;
+margin: auto;
+box-shadow: 0px 0px 35px $color-grey;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+.title-contact {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+}
+
+.contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    padding-bottom: 5%;
+    
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .nutrire {
+        padding-left: 10%;
+        transition: ease-out .4s;
+        &:hover {
+            color: #F5F5F4;
+                font-size: 2.2em;
+                transition: scale(2.5);
+        }
+    }
+
+    
+}
+
+.contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    padding-bottom: 5%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .camila {
+        padding-left: 10%;
+        transition: ease-out .4s;
+        &:hover {
+            color: #F5F5F4;
+                font-size: 2.2em;
+                transition: scale(2.5);
+        }
+    }
+}
+
+.contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    padding-bottom: 5%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .matias {
+        padding-left: 10%;
+        transition: ease-out .4s;
+        &:hover {
+            color: #F5F5F4;
+                font-size: 2.2em;
+                transition: scale(2.5);
+        }
+    }
+}

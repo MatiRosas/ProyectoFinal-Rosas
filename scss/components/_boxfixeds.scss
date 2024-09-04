@@ -1,0 +1,63 @@
+/* Navegadores fixeds */
+.box-fixeds{
+
+    .box-fixed {
+    height: 20px;
+    width: 55px;
+    position: fixed;
+    top: 25%;
+    z-index: 30;
+    box-sizing: border-box;
+    }
+
+    .box-fixed1 {
+    height: 20px;
+    width: 80px;
+    position: fixed;
+    top: 30%;
+    z-index: 30;
+    box-sizing: border-box;
+    }
+
+    .box-fixed2 {
+    height: 20px;
+    width: 80px;
+    position: fixed;
+    top: 35%;
+    z-index: 30;
+    box-sizing: border-box;
+    }
+
+    .box-fixed3 {
+    height: 20px;
+    width: 80px;
+    position: fixed;
+    top: 40%;
+    z-index: 30;
+    box-sizing: border-box;
+    }
+
+    .box-fixed4 {
+    height: 20px;
+    width: 80px;
+    position: fixed;
+    top: 45%;
+    z-index: 30;
+    box-sizing: border-box;
+    }
+
+    .menu__link {
+        color: $color-yellow;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        transition: ease-out .4s;
+    
+        &:hover{
+            color: $color-whitegrey;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+}
+/* Fin Navegadores Fixed */

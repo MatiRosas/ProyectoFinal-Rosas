@@ -1,0 +1,60 @@
+/* Lista productos */
+.lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 9%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+}
+
+.list-product{
+    color: $color-whitegrey;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+    /* Titulo Productos */
+    .title-productos {
+        display: flex;
+        font-family: "Teko", sans-serif;
+        justify-content: center;
+        padding-top: 3%;
+        color: $color-whitegrey;
+        transition: ease-out .4s;
+
+        &:hover {
+            color: $color-green;
+            font-size: 3em;
+            transition: scale(2.5);
+        }
+    }
+
+    .title-category {
+        display: flex;
+        font-family: "Teko", sans-serif;
+        justify-content: end;
+        padding-top: 3%;
+        padding-right: 9%;
+        color: $color-brown;
+        transition: ease-out .4s;
+        animation: show 6s infinite;
+        animation-fill-mode: both;
+        font-size: 5em;
+    }
+
+
+    @keyframes show {
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+
+        to{
+            opacity: 1;
+            scale: 100%;
+        }
+    }

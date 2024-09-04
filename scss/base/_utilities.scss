@@ -1,0 +1,176 @@
+//SECCION NOVEDADES 
+@keyframes parpadear {
+    0% {
+        color: $color-animation;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    25% {
+        color: $color-animation;
+        text-shadow: 0px 0px 9px $color-brown, 0px 0px 3px $color-animation ;
+    }
+
+    30% {
+        color: $color-animation;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    35% {
+        color: $color-animation;
+        text-shadow: 0px 0px 9px $color-brown, 0px 0px 3px $color-animation;
+    }
+
+    46% {
+        color: $color-animation;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    60% {
+        color: $color-animation;
+        text-shadow: 0px 0px 9px $color-brown, 0px 0px 3px $color-animation;
+    }
+
+    72% {
+        color: $color-animation;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    100% {
+        color: $color-animation;
+        text-shadow: 0px 0px 9px $color-brown, 0px 0px 3px $color-animation;
+    }
+}
+
+@keyframes parpadear-linea {
+    0% {
+        background-color: $color-brown;
+    }
+
+    25% {
+        box-shadow: none;
+    }
+
+    30% {
+        background-color: $color-brown;
+    }
+
+    35% {
+        box-shadow: none;
+    }
+
+    46% {
+        background-color: $color-brown;
+
+    }
+
+    60% {
+        box-shadow: none;
+    }
+
+    72% {
+        background-color: $color-brown;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn .btn::before, .btn::after {
+        animation: none;
+    }
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+//SECCION PRODUCTOS
+//Container de Background
+@mixin contain ($display, $justify, $direction, $align, $position) {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+    position: $position;
+}
+
+.contain {
+    @include contain(flex, space-between, row, center, static);
+    padding: 25px;
+    width: 90%;
+    height: 95%;
+    background-color: $color-containproducts;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+//title-text
+@mixin title ($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+}
+
+.title-text {
+@include title (flex, column);
+}
+
+//texto-description-product
+@mixin texto-1 ($display,$font,$padding-bottom,$direction) {
+    display: $display;
+    font-family: $font;
+    padding-bottom: $padding-bottom;
+    flex-direction: $direction;
+}
+
+.texto-1 {
+@include texto-1(flex, "Teko", 2%, column);
+}
+
+//description text
+@mixin description ($direction, $align, $font) {
+    flex-direction: $direction;
+    align-items: $align;
+    font-family: $font;
+}
+
+.text-description {
+    @include description(column, flex-start, "Teko");
+    display: flex;
+    color: $color-whitegrey;
+    font-size: 1.2em;
+}
+
+//img de los productos
+@mixin imagenes ($w,$h,$obj) {
+    width: $w;
+    height: $h;
+    object-fit: $obj;
+}
+
+.photo {
+    @include imagenes (20%, 100%, cover); 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    position: relative;
+}

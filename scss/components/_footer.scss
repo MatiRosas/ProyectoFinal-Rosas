@@ -1,0 +1,132 @@
+/* Footer */
+footer {
+    background-color: #000d;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    /* Menu navegacion */
+    .menu__navegacion{
+    color: $color-whitegrey;
+    }
+    /* Lista ordenada Footer */
+    .list-footer {
+    list-style-type: none;
+    }
+
+    /* Fin lista ordenada */
+    .box-footer {
+    color: $color-whitegrey;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    }
+
+    /* NUTRIRE */
+    .title1-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: $color-whitegrey;
+    padding-inline: 0px;
+    }
+
+    /* Iconos */
+    .iconos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    }
+
+    /* H2 SLOGAN-1 */
+    .slogan-1{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: $color-whitegrey;
+    font-family: "Dancing Script", cursive;
+    }
+
+    .copyright {
+        color: $color-whitegrey;
+        font-size: 0.8em;
+    }
+/* Fin de H2 SLOGAN-1 */
+
+    /* Contactos  */
+    .contactos {
+    color: $color-whitegrey;
+    }
+
+    .numero {
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+    }
+
+    .numero:hover {
+    color: $color-lightblue;
+    font-size: 1.2em;
+    transition: scale(2.5);
+    }
+
+    /* Fin lista ordenada */
+    .box-footer {
+    color: $color-whitegrey;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    }
+
+    /* NUTRIRE */
+    .title1-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: $color-whitegrey;
+    padding-inline: 15px;
+    }
+
+    /* Iconos */
+    .iconos {
+    display: flex;
+    gap: 20px;
+    }
+
+    /* H2 SLOGAN-1 */
+    .slogan-1{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: $color-whitegrey;
+    font-family: "Dancing Script", cursive;
+    }
+/* Fin de H2 SLOGAN-1 */
+
+    /* Contactos  */
+    .contactos {
+    color: $color-whitegrey;
+    }
+
+    .numero {
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+    
+    &:hover {
+        color: $color-lightblue;
+        font-size: 1.2em;
+        transition: scale(2.5);
+        }
+    }
+}

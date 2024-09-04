@@ -1,0 +1,1749 @@
+/* Medias Queryes Mobiles*/
+@media only screen and (min-width:0px) and (max-width:500px) {
+/* Menu */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0 0 45px $color-footer;
+    display: flex;
+    justify-content: space-around;
+
+    .ul__desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+        justify-content: space-around;
+        height: var(--altura_header);   
+        background-color: transparent;     
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    ol,ul{
+        list-style: none;
+    }
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 var(--padding_left_right);
+    }
+
+    .menu_hamburguesa{
+        display: none;
+
+        &:checked + .ul_links {
+            height: calc(100vh - var(--altura_header));
+        }
+    }
+        
+    .logo {
+        display: flex;
+        justify-content: center;
+        color: var(--color_blanco); 
+        font-family: "Teko", sans-serif;
+        transition: ease-out .4s;
+        color: $color-yellow;
+        font-size: 3.4em;
+        transition: scale(2.5);
+        }
+
+    .list_icon {
+        color: var(--color_blanco);
+        cursor: pointer;
+        }
+
+    .ul_links {
+        width: 100%;
+        background-image: url(../multimedia/nutrire-fondo.png);
+        background-size: cover;
+        background-position: center;
+        /* top: var(--altura_header); */
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        /* height: calc(100vh - var(--altura_header)); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition: all .5s;
+    }
+    
+    .link {
+        font-size: 2em;
+        color: $color-white;
+    }
+        
+    .menu-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        display: none;
+    }
+    
+    .menu {
+        background: url(../multimedia/nutrire-fondo.png);
+        padding-inline: 0;
+        width: 100%;
+        height: 60%;
+    }
+    .menu__list {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+}
+/* Root Hamburguesa */
+    :root {
+        --color_primario: $color-orange;
+        --color_primario_suave: $color-green;
+        --color_blanco: $color-white;
+        --altura_header: 75px;
+        --padding_left_right: 2rem;
+        --ancho_maximo: 1200px;
+    }
+    
+    /* INDEX */
+    /* Textos web */
+    .text-index {
+        padding-bottom: 50%;
+    
+        .class-quienes {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .class-bienvenida {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            color: $color-brown;
+            padding-top: 5%;
+        }
+    
+        .titulo2 {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .parrafo2 {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            color: $color-brown;
+        }
+    
+        .titulo3 {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .parrafo3 {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            padding-bottom: 8%;
+            color: $color-brown;
+        }
+    }
+    /* CONOCENOS */
+/* Cuando arrancamos */
+.arranque {
+    padding-bottom: 30%;
+
+    .cuando-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 3%;
+        padding-top: 60px;
+        background-color: transparent;
+        color: $color-brown;
+    }
+    
+    .texto {
+        text-align: justify;
+        font-style: italic;
+        background-color: transparent;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+    }
+}
+/* Que nos motivo */
+.motivo {
+    padding-bottom: 30%;
+
+    .que-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-2 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }        
+}
+/* Donde nos situamos */
+.lugar {
+    padding-bottom: 20%;
+
+    .donde {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-3 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }
+}
+/* Que Ofrecemos */
+.que-2 {
+    padding-bottom: 20%;
+
+    .ofrecemos {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-4 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }        
+}
+/* Fin Textos web */
+
+/* Slider box Novedades*/
+.slider-box {
+    width: 90%;
+    height: 100vh;
+    margin: 2% auto 0;
+    overflow: hidden;
+
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 500%;
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+
+    .slider-box li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+    
+    .texto-carousel {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.7em;
+        width: 90%;
+        position: absolute;
+        text-align: center;
+        padding: 0 0;
+        top: 67%;
+        color: $color-brown;
+        background-color: $color-cream-carousel;
+    }
+
+    .texto-carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 2%;
+    }
+
+    .slider-box img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    }
+}
+
+.text-novedades1 {
+    font-size: 0.5em;
+}
+
+.ultimos {
+    text-align: center;
+    color: $color-brown;
+    font-size: 2em;
+}
+
+ /* Lista productos */
+.lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+}
+
+.list-product{
+    color: $color-whitegrey;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    padding-right: 15px;
+}
+
+
+/* Container de Backgrounds Productos */
+.contain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 97%;
+    height: 92%;
+    background-color: $color-containproducts;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+/* PRODUCTOS */
+.texto-1 {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 1%;
+    padding-right: 50px;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-whitegrey;
+    font-family: "Teko", sans-serif;
+    font-size: 1em;
+    padding-right: 50px;
+}
+
+.photo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction:row;
+    width: 30%;
+    height: 100%;
+}
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo Productos */
+.title-productos {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    justify-content: center;
+    padding-top: 2%;
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+
+    &:hover {
+        color: $color-green;
+        font-size: 2em;
+        transition: scale(2.5);
+    }
+}    
+
+/* CONTACTO */
+.formulario {
+    color: $color-whitegrey;
+    background: linear-gradient(to bottom, $color-orange,$color-green);
+    border-radius: 25px;
+
+    .form-contact {
+        text-align: center;
+        font-family:"Teko", sans-serif;
+        margin: 0;
+        margin-bottom: 15%;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 3em;
+        padding: 10px;
+    }
+}
+
+form {
+background-color: transparent;
+padding: 5% 0;
+max-width: 80%;
+margin: auto;
+box-shadow: 0px 0px 35px $color-grey;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+.contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+    
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .nutrire {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .camila {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .matias {
+        padding-left: 10%;
+    }
+}
+
+/* Footer */
+    footer {
+        background-color: $color-footer;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+/* Menu navegacion */
+        .menu__navegacion{
+            color: $color-whitegrey;
+            font-size: 0.8em;
+        }
+        /* Lista ordenada Footer */
+        .list-footer {
+            list-style-type: none;
+        }
+        /* Fin lista ordenada */
+
+        .box-footer {
+            color: $color-whitegrey;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.6em;
+        }
+        
+        /* NUTRIRE */
+        .title1-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .title-1 {
+            text-align: center;
+            font-size: 2em;
+            font-family: "Teko", sans-serif;
+            color: $color-whitegrey;
+            padding-inline: 15px;
+        }
+        
+        /* Iconos */
+        .iconos {
+            display: flex;
+            gap: 10px;
+        }
+        
+        /* H2 SLOGAN-1 */
+        .slogan-1{
+            text-align: center;
+            font-size: 0.8em;
+            background-color: transparent;
+            color: $color-whitegrey;
+            font-family: "Dancing Script", cursive;
+        }
+        /* Fin de H2 SLOGAN-1 */
+        
+        .copyright {
+            font-size: 0.5em;
+        }
+
+        /* Contactos  */
+        .contactos {
+            color: $color-whitegrey;
+            font-size: 0.7em;
+        }
+        
+        .contactos h3 {
+            font-size: 1.5em;
+        }
+        
+        .numero {
+            color: $color-whitegrey;
+            transition: ease-out .4s;
+            font-size: 0.6em;
+    
+            &:hover {
+                color: $color-lightblue;
+                font-size: 0.6em;
+                transition: scale(2.5);
+            }
+        }
+        }
+    }
+
+/* Medias Queryes Tablets*/
+@media only screen and (min-width:501px) and (max-width:800px) {
+/* Menu */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0 0 45px $color-footer;
+    display: flex;
+    justify-content: space-around;
+
+    .ul__desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+        justify-content: space-around;
+        height: var(--altura_header);   
+        background-color: transparent;     
+    }
+
+    a{
+        text-decoration: none;
+    }
+    ol,ul{
+        list-style: none;
+    }
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 var(--padding_left_right);
+        
+    }
+    .menu_hamburguesa{
+        display: none;
+
+        &:checked + .ul_links {
+            height: calc(100vh - var(--altura_header));
+        }
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        color: var(--color_blanco); 
+        font-family: "Teko", sans-serif;
+        transition: ease-out .4s;
+        color: $color-yellow;
+        font-size: 3.4em;
+        transition: scale(2.5);
+    }
+
+    .list_icon {
+        color: var(--color_blanco);
+        cursor: pointer;
+    }
+
+    .ul_links {
+        width: 100%;
+        background-image: url(../multimedia/nutrire-fondo.png);
+        background-size: cover;
+        background-position: center;
+        /* top: var(--altura_header); */
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        /* height: calc(100vh - var(--altura_header)); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition: all .5s;
+    }
+
+    .link {
+        font-size: 2em;
+        color: $color-white;
+        
+    }
+    
+    .menu-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .menu {
+        background: url(../multimedia/nutrire-fondo.png);
+        padding-inline: 0;
+        width: 100%;
+        height: 60%;
+    }
+
+    .menu__list {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+}
+/* Root Hamburguesa */
+:root {
+    --color_primario: $color-orange;
+    --color_primario_suave: $color-green;
+    --color_blanco: $color-white;
+    --altura_header: 75px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+    /* INDEX */
+    /* Textos web */
+    .text-index {
+        padding-bottom: 50%;
+    
+        .class-quienes {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .class-bienvenida {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            color: $color-brown;
+            padding-top: 5%;
+        }
+    
+        .titulo2 {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .parrafo2 {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            color: $color-brown;
+        }
+    
+        .titulo3 {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 2.3em;
+            padding-left: 3%;
+            padding-top: 60px;
+            background-color: transparent;
+            color: $color-brown;
+        }
+        
+        .parrafo3 {
+            text-align: justify;
+            background-color: transparent;
+            padding-left: 3%;
+            padding-right: 5%;
+            padding-bottom: 8%;
+            color: $color-brown;
+        }
+    }
+
+    /* CONOCENOS */
+/* Cuando arrancamos */
+.arranque {
+    padding-bottom: 30%;
+
+    .cuando-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 3%;
+        padding-top: 60px;
+        background-color: transparent;
+        color: $color-brown;
+    }
+    
+    .texto {
+        text-align: justify;
+        font-style: italic;
+        background-color: transparent;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+    }
+}
+
+/* Que nos motivo */
+.motivo {
+    padding-bottom: 30%;
+
+    .que-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-2 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }        
+}
+/* Donde nos situamos */
+.lugar {
+    padding-bottom: 20%;
+
+    .donde {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-3 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }
+}
+
+/* Que Ofrecemos */
+
+.que-2 {
+    padding-bottom: 20%;
+
+    .ofrecemos {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-top: 60px;
+        padding-left: 3%;
+        background-color: transparent;
+        color: $color-brown;
+        }
+        
+        .texto-4 {
+        text-align: justify;
+        background-color: transparent;
+        font-size: 0.9em;
+        padding-left: 3%;
+        padding-right: 5%;
+        color: $color-brown;
+        }        
+}
+/* Fin Textos web */
+
+/* Slider box Novedades*/
+.slider-box {
+    width: 90%;
+    height: 100vh;
+    margin: 2% auto 0;
+    overflow: hidden;
+
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 500%;
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+
+    .slider-box li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+    
+    .texto-carousel {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.8em;
+        width: 90%;
+        position: absolute;
+        text-align: center;
+        padding: 0 0;
+        top: 80%;
+        color: $color-brown;
+        background-color: $color-cream-carousel;
+    }
+
+    .texto-carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 2%;
+    }
+
+    .slider-box img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    }
+}
+
+/* Lista productos */
+.lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+}
+
+.list-product{
+    color: $color-whitegrey;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    padding-right: 15px;
+}
+
+
+/* Container de Backgrounds Productos */
+.contain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 97%;
+    height: 92%;
+    background-color: $color-containproducts;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+/* PRODUCTOS */
+.texto-1 {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 1%;
+    padding-right: 50px;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-whitegrey;
+    font-family: "Teko", sans-serif;
+    font-size: 1em;
+    padding-right: 50px;
+}
+
+.photo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction:row;
+    width: 30%;
+    height: 100%;
+}
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo Productos */
+.title-productos {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    justify-content: center;
+    padding-top: 2%;
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+
+    &:hover {
+        color: $color-green;
+        font-size: 2em;
+        transition: scale(2.5);
+    }
+}
+
+/* CONTACTO */
+.formulario {
+    color: $color-whitegrey;
+    background: linear-gradient(to bottom, $color-orange,$color-green);
+    border-radius: 25px;
+
+    .form-contact {
+        text-align: center;
+        font-family:"Teko", sans-serif;
+        margin: 0;
+        margin-bottom: 15%;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 3em;
+        padding: 10px;
+    }
+}
+
+form {
+background-color: transparent;
+padding: 5% 0;
+max-width: 80%;
+margin: auto;
+box-shadow: 0px 0px 35px $color-grey;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+.contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+    
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .nutrire {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .camila {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .matias {
+        padding-left: 10%;
+    }
+}
+
+/* Footer */
+    footer {
+        background-color: $color-footer;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+/* Menu navegacion */
+        .menu__navegacion{
+            color: $color-whitegrey;
+            font-size: 0.8em;
+        }
+        /* Lista ordenada Footer */
+        .list-footer {
+            list-style-type: none;
+        }
+        /* Fin lista ordenada */
+
+        .box-footer {
+            color: $color-whitegrey;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.6em;
+        }
+        
+        /* NUTRIRE */
+        .title1-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .title-1 {
+            text-align: center;
+            font-size: 2em;
+            font-family: "Teko", sans-serif;
+            color: $color-whitegrey;
+            padding-inline: 15px;
+        }
+        
+        /* Iconos */
+        .iconos {
+            display: flex;
+            gap: 10px;
+        }
+        
+        /* H2 SLOGAN-1 */
+        .slogan-1{
+            text-align: center;
+            font-size: 0.8em;
+            background-color: transparent;
+            color: $color-whitegrey;
+            font-family: "Dancing Script", cursive;
+        }
+        /* Fin de H2 SLOGAN-1 */
+        
+        /* Contactos  */
+        .contactos {
+            color: $color-whitegrey;
+            font-size: 0.7em;
+        }
+        
+        .contactos h3 {
+            font-size: 1.5em;
+        }
+        
+        .numero {
+            color: $color-whitegrey;
+            transition: ease-out .4s;
+            font-size: 0.6em;
+    
+            &:hover {
+                color: $color-lightblue;
+                font-size: 0.6em;
+                transition: scale(2.5);
+            }
+        }
+        }
+    }
+/* Medias Queryes +850px a 1400px*/ 
+@media only screen and (min-width:801px) and (max-width:1400px) {
+/* Menu */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 30;
+    box-shadow: 0 0 35px $color-footer;
+
+    .menu {
+        background: url(../multimedia/nutrire-fondo.png);
+        padding-inline: 50px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu__list {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .menu__item {
+        display: inline-block;
+        padding: 3px 25px;
+    }
+    
+    .menu__link {
+        color: $color-yellow;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        transition: ease-out .4s;
+    
+        &:hover{
+            color: $color-whitegrey;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+
+/* NUTRIRE */
+    .title {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    transition: ease-out .4s;
+    color: $color-black;
+
+        &:hover {
+        color: $color-yellow;
+        font-size: 5.4em;
+        transition: scale(2.5);
+    }
+    }
+
+    .link__title {
+        text-decoration: none;
+        }
+
+    .header-mobile {
+    display: none;
+    }
+}
+
+    .menu__link {
+        color: $color-yellow;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        transition: ease-out .4s;
+    
+        &:hover{
+            color: $color-whitegrey;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+
+        /* INDEX */
+    /* Textos web */
+    .text-index {
+        padding-bottom: 5%;
+    
+        .class-quienes {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 7%;
+            padding-top: 100px;
+            color: $color-brown;
+        }
+    
+        .class-bienvenida {
+            text-align: justify;
+            font-style: italic;
+            padding-inline: 40%;
+            letter-spacing: 1px;
+            padding-left: 7%;
+            background-color: transparent;
+            padding-right: 55%;
+            color:  $color-brown;
+        }
+    
+        .titulo2 {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 2.3em;
+            padding-left: 50%;
+            padding-top: 100px;
+            background-color: transparent;
+            bottom: 25%;
+            color: $color-brown;
+        }
+    
+        .parrafo2 {
+            text-align: justify;
+            font-style: italic;
+            padding-inline: 7%;
+            letter-spacing: 1px;
+            padding-left: 50%;
+            background-color: transparent;
+            bottom: 20%;
+            color: $color-brown;
+        }
+    
+        .titulo3 {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 2.3em;
+            padding-left: 7%;
+            padding-top: 10%;
+            background-color: transparent;
+            color: $color-brown;
+        }
+    
+        .parrafo3 {
+            text-align: justify;
+            font-style: italic;
+            padding-inline: 40%;
+            letter-spacing: 1px;
+            padding-left: 7%;
+            background-color: transparent;
+            padding-right: 55%;
+            color: $color-brown;
+            padding-bottom: 5%;
+        }
+    }
+/* CONOCENOS */
+/* Cuando Arrancamos */
+.arranque {
+    padding-bottom: 5%;
+
+    .cuando-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 7%;
+        padding-top: 100px;
+        background-color: transparent;
+        color: $color-brown;
+    }
+
+    .texto {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 40%;
+        letter-spacing: 1px;
+        padding-left: 7%;
+        background-color: transparent;
+        padding-right: 55%;
+        color: $color-brown;
+    }
+}
+
+/* Que nos motivo */
+
+.motivo {
+    padding-bottom: 5%;
+
+    .que-1 {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 50%;
+        padding-top: 100px;
+        background-color: transparent;
+        bottom: 25%;
+        color: $color-brown;
+    }
+
+    .texto-2 {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 7%;
+        letter-spacing: 1px;
+        padding-left: 50%;
+        background-color: transparent;
+        bottom: 20%;
+        color: $color-brown;
+    }
+    .menu__link {
+        color: $color-yellow;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        transition: ease-out .4s;
+    
+        &:hover{
+            color: $color-whitegrey;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+}
+
+/* Donde nos situamos */
+.lugar {
+    padding-bottom: 5%;
+
+    .donde {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 7%;
+        padding-top: 150px;
+        background-color: transparent;
+        color: $color-brown;
+    }
+    
+    .texto-3 {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 40%;
+        letter-spacing: 1px;
+        padding-left: 7%;
+        background-color: transparent;
+        padding-right: 55%;
+        color: $color-brown;
+    }
+}
+
+/* Que Ofrecemos */
+.que-2 {
+    padding-bottom: 5%;
+
+    .ofrecemos {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 2.3em;
+        padding-left: 50%;
+        padding-top: 100px;
+        background-color: transparent;
+        bottom: 25%;
+        color: $color-brown;
+    }
+    
+    .texto-4 {
+        text-align: justify;
+        font-style: italic;
+        padding-inline: 7%;
+        letter-spacing: 1px;
+        padding-left: 50%;
+        background-color: transparent;
+        bottom: 20%;
+        color: $color-brown;
+    }
+
+    .menu__link {
+        color: $color-yellow;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        transition: ease-out .4s;
+    
+        &:hover{
+            color: $color-whitegrey;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+}
+
+    .ultimos {
+        text-align: center;
+        font-family: "Teko", sans-serif;
+        color: $color-brown;
+    }  
+
+/* Lista productos */
+    .lista-productos {
+        display: grid;
+        flex-direction: column;
+        padding-left: 9%;
+        padding-top: 5%;
+        font-family: "Teko", sans-serif;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(21, auto);
+        text-decoration: none;
+    }
+    
+    .list-product{
+        color: $color-whitegrey;
+        font-family: "Teko", sans-serif;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+    
+    /* Container de Backgrounds Productos */
+    .contain {
+        display: flex;
+        padding: 25px;
+        width: 90%;
+        height: 95%;
+        background-color: $color-containproducts;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+    
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        .title-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* PRODUCTOS */
+        .texto-1 {
+            display: flex;
+            font-family: "Teko", sans-serif;
+            padding-bottom: 2%;
+            flex-direction: column;
+        }
+        
+        .text-description {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: $color-whitegrey;
+            font-family: "Teko", sans-serif;
+            font-size: 1.2em;
+        }
+        
+        .photo {
+            display: flex;
+            align-items: flex-end;
+            flex-direction:row;
+            width: 20%;
+            height: 100%;
+            position: relative;
+        }
+    }
+        /* Titulo Productos */
+        .title-productos {
+            display: flex;
+            font-family: "Teko", sans-serif;
+            justify-content: center;
+            padding-top: 3%;
+            color: $color-whitegrey;
+            transition: ease-out .4s;
+    
+            &:hover {
+                color: $color-green;
+                font-size: 3em;
+                transition: scale(2.5);
+            }
+        }
+
+/* CONTACTO */
+.formulario {
+    color: $color-whitegrey;
+    background: linear-gradient(to bottom, $color-orange,$color-green);
+    border-radius: 25px;
+
+    .form-contact {
+        text-align: center;
+        font-family:"Teko", sans-serif;
+        margin: 0;
+        margin-bottom: 15%;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 3em;
+        padding: 10px;
+    }
+}
+
+form {
+background-color: transparent;
+padding: 5% 0;
+max-width: 80%;
+margin: auto;
+box-shadow: 0px 0px 35px $color-grey;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+.contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+    
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .nutrire {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .camila {
+        padding-left: 10%;
+    }
+}
+
+.contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: $color-yellow;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+
+    .link-contact{
+        display: flex;
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+    .matias {
+        padding-left: 10%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: $color-footer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    /* Menu navegacion */
+    .menu__navegacion{
+    color: $color-whitegrey;
+    }
+    /* Lista ordenada Footer */
+    .list-footer {
+    list-style-type: none;
+    }
+
+    /* Fin lista ordenada */
+    .box-footer {
+    color: $color-whitegrey;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    }
+
+    /* NUTRIRE */
+    .title1-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: $color-whitegrey;
+    padding-inline: 15px;
+    }
+
+    /* Iconos */
+    .iconos {
+    display: flex;
+    gap: 20px;
+    }
+
+    /* H2 SLOGAN-1 */
+    .slogan-1{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: $color-whitegrey;
+    font-family: "Dancing Script", cursive;
+    }
+/* Fin de H2 SLOGAN-1 */
+
+    /* Contactos  */
+    .contactos {
+    color: $color-whitegrey;
+    }
+
+    .numero {
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+
+        &:hover {
+            color: $color-lightblue;
+            font-size: 1.2em;
+            transition: scale(2.5);
+        }
+    }
+
+    /* Fin lista ordenada */
+    .box-footer {
+    color: $color-whitegrey;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    }
+
+    /* NUTRIRE */
+    .title1-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: $color-whitegrey;
+    padding-inline: 15px;
+    }
+
+    /* Iconos */
+    .iconos {
+    display: flex;
+    gap: 20px;
+    }
+
+    /* H2 SLOGAN-1 */
+    .slogan-1{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: $color-whitegrey;
+    font-family: "Dancing Script", cursive;
+    }
+    /* Fin de H2 SLOGAN-1 */
+
+    /* Contactos  */
+    .contactos {
+    color: $color-whitegrey;
+    }
+
+    .numero {
+    color: $color-whitegrey;
+    transition: ease-out .4s;
+    
+    &:hover {
+        color: $color-lightblue;
+        font-size: 1.2em;
+        transition: scale(2.5);
+        }
+    }
+}
+}
+
+
+

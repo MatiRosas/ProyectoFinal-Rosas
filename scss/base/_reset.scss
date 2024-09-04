@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Fondo Pagina */
+.box{
+    padding: 5px;
+    background: url(../multimedia/nutrire-fondo.png) center / cover scroll;
+    width: 100%;
+    background-color: transparent;
+}
+/* Fin fondo de pagina */
+
+/* Fondo pagina PRODUCTOS */
+.box-1{
+    background-color: $color-orange;
+}
+/* Fin fondo pagina PRODUCTOS */
+
+/* H2 SLOGAN */
+.slogan{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-right: 5px;
+    background-color: $color-orange;
+    color: $color-whitegrey;
+    font-family: "Dancing Script", cursive;
+}
+/* Fin de H2 SLOGAN */

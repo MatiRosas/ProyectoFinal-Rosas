@@ -1,0 +1,19 @@
+//base
+@import 'base/vars';
+@import 'base/utilities';
+@import 'base/reset';
+
+
+//components
+@import 'components/header';
+@import 'components/boxfixeds';
+@import 'components/carousel';
+@import 'components/footer';
+
+//layout
+@import 'layout/index';
+@import 'layout/conocenos';
+@import 'layout/contacto';
+@import 'layout/novedades';
+@import 'layout/productos';
+@import 'layout/mediaqueries';

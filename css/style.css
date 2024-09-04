@@ -1,0 +1,2454 @@
+@keyframes parpadear {
+  0% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: none;
+    box-shadow: none;
+  }
+  25% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  }
+  30% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: none;
+    box-shadow: none;
+  }
+  35% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  }
+  46% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: none;
+    box-shadow: none;
+  }
+  60% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  }
+  72% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: none;
+    box-shadow: none;
+  }
+  100% {
+    color: rgba(125, 62, 31, 0.697);
+    text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  }
+}
+@keyframes parpadear-linea {
+  0% {
+    background-color: #7D3F1F;
+  }
+  25% {
+    box-shadow: none;
+  }
+  30% {
+    background-color: #7D3F1F;
+  }
+  35% {
+    box-shadow: none;
+  }
+  46% {
+    background-color: #7D3F1F;
+  }
+  60% {
+    box-shadow: none;
+  }
+  72% {
+    background-color: #7D3F1F;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn .btn::before, .btn::after {
+    animation: none;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.contain {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: static;
+  padding: 25px;
+  width: 90%;
+  height: 95%;
+  background-color: #dbcdaf;
+}
+.contain:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-1 {
+  display: flex;
+  font-family: "Teko";
+  padding-bottom: 2%;
+  flex-direction: column;
+}
+
+.text-description {
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Teko";
+  display: flex;
+  color: #F5F5F4;
+  font-size: 1.2em;
+}
+
+.photo {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Fondo Pagina */
+.box {
+  padding: 5px;
+  background: url(../multimedia/nutrire-fondo.png) center/cover scroll;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Fin fondo de pagina */
+/* Fondo pagina PRODUCTOS */
+.box-1 {
+  background-color: #D2B48C;
+}
+
+/* Fin fondo pagina PRODUCTOS */
+/* H2 SLOGAN */
+.slogan {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-right: 5px;
+  background-color: #D2B48C;
+  color: #F5F5F4;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Fin de H2 SLOGAN */
+/* Menu */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 30;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+  /* NUTRIRE */
+}
+header .menu {
+  background: url(../multimedia/nutrire-fondo.png);
+  padding-inline: 50px;
+  width: 100%;
+  height: 100%;
+}
+header .menu__list {
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+}
+header .menu__item {
+  display: inline-block;
+  padding: 3px 25px;
+}
+header .menu__link {
+  color: #EDE1A5;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  transition: ease-out 0.4s;
+}
+header .menu__link:hover {
+  color: #F5F5F4;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+header .title {
+  align-items: center;
+  font-size: 5em;
+  font-family: "Teko", sans-serif;
+  transition: ease-out 0.4s;
+  color: #000;
+}
+header .title:hover {
+  color: #EDE1A5;
+  font-size: 5.4em;
+  transition: scale(2.5);
+}
+header .link__title {
+  text-decoration: none;
+}
+header .header-mobile {
+  display: none;
+}
+
+/* Fin del menu */
+/* Navegadores fixeds */
+.box-fixeds .box-fixed {
+  height: 20px;
+  width: 55px;
+  position: fixed;
+  top: 25%;
+  z-index: 30;
+  box-sizing: border-box;
+}
+.box-fixeds .box-fixed1 {
+  height: 20px;
+  width: 80px;
+  position: fixed;
+  top: 30%;
+  z-index: 30;
+  box-sizing: border-box;
+}
+.box-fixeds .box-fixed2 {
+  height: 20px;
+  width: 80px;
+  position: fixed;
+  top: 35%;
+  z-index: 30;
+  box-sizing: border-box;
+}
+.box-fixeds .box-fixed3 {
+  height: 20px;
+  width: 80px;
+  position: fixed;
+  top: 40%;
+  z-index: 30;
+  box-sizing: border-box;
+}
+.box-fixeds .box-fixed4 {
+  height: 20px;
+  width: 80px;
+  position: fixed;
+  top: 45%;
+  z-index: 30;
+  box-sizing: border-box;
+}
+.box-fixeds .menu__link {
+  color: #EDE1A5;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  transition: ease-out 0.4s;
+}
+.box-fixeds .menu__link:hover {
+  color: #F5F5F4;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+
+/* Fin Navegadores Fixed */
+/* Carrusel */
+.carousel-caption {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+  background-color: #EDE1A5;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8666666667);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* Menu navegacion */
+  /* Lista ordenada Footer */
+  /* Fin lista ordenada */
+  /* NUTRIRE */
+  /* Iconos */
+  /* H2 SLOGAN-1 */
+  /* Fin de H2 SLOGAN-1 */
+  /* Contactos  */
+  /* Fin lista ordenada */
+  /* NUTRIRE */
+  /* Iconos */
+  /* H2 SLOGAN-1 */
+  /* Fin de H2 SLOGAN-1 */
+  /* Contactos  */
+}
+footer .menu__navegacion {
+  color: #F5F5F4;
+}
+footer .list-footer {
+  list-style-type: none;
+}
+footer .box-footer {
+  color: #F5F5F4;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+footer .title1-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .title-1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: "Teko", sans-serif;
+  color: #F5F5F4;
+  padding-inline: 0px;
+}
+footer .iconos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .slogan-1 {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: #F5F5F4;
+  font-family: "Dancing Script", cursive;
+}
+footer .copyright {
+  color: #F5F5F4;
+  font-size: 0.8em;
+}
+footer .contactos {
+  color: #F5F5F4;
+}
+footer .numero {
+  color: #F5F5F4;
+  transition: ease-out 0.4s;
+}
+footer .numero:hover {
+  color: #B2D6FF;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+footer .box-footer {
+  color: #F5F5F4;
+  text-decoration: none;
+  padding: 2px;
+  margin: 2px;
+}
+footer .title1-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .title-1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: "Teko", sans-serif;
+  color: #F5F5F4;
+  padding-inline: 15px;
+}
+footer .iconos {
+  display: flex;
+  gap: 20px;
+}
+footer .slogan-1 {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: #F5F5F4;
+  font-family: "Dancing Script", cursive;
+}
+footer .contactos {
+  color: #F5F5F4;
+}
+footer .numero {
+  color: #F5F5F4;
+  transition: ease-out 0.4s;
+}
+footer .numero:hover {
+  color: #B2D6FF;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+
+/* INDEX */
+/* Textos web */
+.text-index {
+  padding-bottom: 5%;
+}
+.text-index .class-quienes {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 7%;
+  padding-top: 100px;
+  color: #7D3F1F;
+}
+.text-index .class-bienvenida {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 40%;
+  letter-spacing: 1px;
+  padding-left: 7%;
+  background-color: transparent;
+  padding-right: 55%;
+  color: #7D3F1F;
+}
+.text-index .titulo2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 50%;
+  padding-top: 100px;
+  background-color: transparent;
+  bottom: 25%;
+  color: #7D3F1F;
+}
+.text-index .parrafo2 {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 7%;
+  letter-spacing: 1px;
+  padding-left: 50%;
+  background-color: transparent;
+  bottom: 20%;
+  color: #7D3F1F;
+}
+.text-index .titulo3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2.3em;
+  padding-left: 7%;
+  padding-top: 10%;
+  background-color: transparent;
+  color: #7D3F1F;
+}
+.text-index .parrafo3 {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 40%;
+  letter-spacing: 1px;
+  padding-left: 7%;
+  background-color: transparent;
+  padding-right: 55%;
+  color: #7D3F1F;
+  padding-bottom: 5%;
+}
+
+/* Fin Textos web */
+/* CONOCENOS */
+/* Cuando Arrancamos */
+.arranque {
+  padding-bottom: 5%;
+}
+.arranque .cuando-1 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 7%;
+  padding-top: 100px;
+  background-color: transparent;
+  color: #7D3F1F;
+}
+.arranque .texto {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 40%;
+  letter-spacing: 1px;
+  padding-left: 7%;
+  background-color: transparent;
+  padding-right: 55%;
+  color: #7D3F1F;
+}
+
+/* Que nos motivo */
+.motivo {
+  padding-bottom: 5%;
+}
+.motivo .que-1 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 50%;
+  padding-top: 100px;
+  background-color: transparent;
+  bottom: 25%;
+  color: #7D3F1F;
+}
+.motivo .texto-2 {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 7%;
+  letter-spacing: 1px;
+  padding-left: 50%;
+  background-color: transparent;
+  bottom: 20%;
+  color: #7D3F1F;
+}
+.motivo .menu__link {
+  color: #EDE1A5;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  transition: ease-out 0.4s;
+}
+.motivo .menu__link:hover {
+  color: #F5F5F4;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+
+/* Donde nos situamos */
+.lugar {
+  padding-bottom: 5%;
+}
+.lugar .donde {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 7%;
+  padding-top: 150px;
+  background-color: transparent;
+  color: #7D3F1F;
+}
+.lugar .texto-3 {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 40%;
+  letter-spacing: 1px;
+  padding-left: 7%;
+  background-color: transparent;
+  padding-right: 55%;
+  color: #7D3F1F;
+}
+
+/* Que Ofrecemos */
+.que-2 {
+  padding-bottom: 5%;
+}
+.que-2 .ofrecemos {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+  padding-left: 50%;
+  padding-top: 100px;
+  background-color: transparent;
+  bottom: 25%;
+  color: #7D3F1F;
+}
+.que-2 .texto-4 {
+  text-align: justify;
+  font-style: italic;
+  padding-inline: 7%;
+  letter-spacing: 1px;
+  padding-left: 50%;
+  background-color: transparent;
+  bottom: 20%;
+  color: #7D3F1F;
+}
+.que-2 .menu__link {
+  color: #EDE1A5;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  transition: ease-out 0.4s;
+}
+.que-2 .menu__link:hover {
+  color: #F5F5F4;
+  font-size: 1.2em;
+  transition: scale(2.5);
+}
+
+/* CONTACTO */
+.formulario {
+  color: #F5F5F4;
+  background: linear-gradient(to bottom, #D2B48C, #B3C19A);
+  border-radius: 15px;
+}
+.formulario .form-contact {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3em;
+  padding: 10px;
+}
+
+form {
+  background-color: transparent;
+  padding: 20px 0;
+  max-width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.6666666667);
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.title-contact {
+  display: flex;
+  justify-content: center;
+  color: #EDE1A5;
+}
+
+.contact-instagram {
+  display: flex;
+  justify-content: center;
+  color: #EDE1A5;
+  padding-bottom: 5%;
+}
+.contact-instagram .link-contact {
+  display: flex;
+  text-decoration: none;
+  color: #EDE1A5;
+}
+.contact-instagram .nutrire {
+  padding-left: 10%;
+  transition: ease-out 0.4s;
+}
+.contact-instagram .nutrire:hover {
+  color: #F5F5F4;
+  font-size: 2.2em;
+  transition: scale(2.5);
+}
+
+.contact-whatsapp {
+  display: flex;
+  justify-content: center;
+  color: #EDE1A5;
+  padding-bottom: 5%;
+}
+.contact-whatsapp .link-contact {
+  display: flex;
+  text-decoration: none;
+  color: #EDE1A5;
+}
+.contact-whatsapp .camila {
+  padding-left: 10%;
+  transition: ease-out 0.4s;
+}
+.contact-whatsapp .camila:hover {
+  color: #F5F5F4;
+  font-size: 2.2em;
+  transition: scale(2.5);
+}
+
+.contact-whatsapp2 {
+  display: flex;
+  justify-content: center;
+  color: #EDE1A5;
+  padding-bottom: 5%;
+}
+.contact-whatsapp2 .link-contact {
+  display: flex;
+  text-decoration: none;
+  color: #EDE1A5;
+}
+.contact-whatsapp2 .matias {
+  padding-left: 10%;
+  transition: ease-out 0.4s;
+}
+.contact-whatsapp2 .matias:hover {
+  color: #F5F5F4;
+  font-size: 2.2em;
+  transition: scale(2.5);
+}
+
+.body-novedades {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NOVEDADES */
+.text-novedades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.novedades {
+  font-family: "Teko";
+  font-size: 4em;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7D3F1F;
+  width: 100%;
+}
+.novedades:hover {
+  color: rgba(125, 62, 31, 0.697);
+  text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  animation: parpadear 1s infinite alternate backwards;
+}
+.novedades::before {
+  content: "";
+  background-color: #7D3F1F;
+  display: block;
+  height: 1px;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  top: -16px;
+  transition: top 0.6s, opacity 0.6s, width 0.2s;
+  animation: parpadear-linea 1s infinite alternate backwards;
+  opacity: 1;
+  width: 80%;
+}
+.novedades::after {
+  content: "";
+  background-color: #7D3F1F;
+  display: block;
+  height: 1px;
+  width: 10%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  top: -19px;
+  transition: top 0.6s, opacity 0.6s, width 0.2s;
+  animation: parpadear-linea 1s infinite alternate-reverse backwards;
+  opacity: 1;
+  width: 50%;
+}
+
+.flecha {
+  display: flex;
+  font-size: 150px;
+  color: #7D3F1F;
+  color: #7D3F1F;
+}
+.flecha:hover {
+  color: rgba(125, 62, 31, 0.697);
+  text-shadow: 0px 0px 9px #7D3F1F, 0px 0px 3px rgba(125, 62, 31, 0.697);
+  animation: parpadear 1s infinite alternate backwards;
+}
+
+.flecha::before {
+  content: "";
+  background-color: #7D3F1F;
+  display: block;
+  height: 1px;
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  top: -16px;
+  transition: top 0.6s, opacity 0.6s, width 0.2s;
+  animation: parpadear-linea 1s infinite alternate backwards;
+  opacity: 1;
+  width: 80%;
+}
+
+.flecha::after {
+  content: "";
+  background-color: #7D3F1F;
+  display: block;
+  height: 1px;
+  width: 10%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  top: -19px;
+  transition: top 0.6s, opacity 0.6s, width 0.2s;
+  animation: parpadear-linea 1s infinite alternate-reverse backwards;
+  opacity: 1;
+  width: 50%;
+}
+
+.text-novedades1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ultimos {
+  text-align: center;
+  color: #7D3F1F;
+}
+
+.slider-box {
+  width: 90vh;
+  height: 90vh;
+  margin: 2% auto 0;
+  overflow: hidden;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.texto-carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  position: absolute;
+  text-align: center;
+  padding: 0 2%;
+  top: 65%;
+  color: #7D3F1F;
+  background-color: rgba(255, 220, 190, 0.818);
+}
+
+.texto-carousel h2 {
+  font-size: 45px;
+  margin-bottom: 35px;
+  font-family: "Teko";
+}
+
+.slider-box img {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Lista productos */
+.lista-productos {
+  display: grid;
+  flex-direction: column;
+  padding-left: 9%;
+  padding-top: 5%;
+  font-family: "Teko", sans-serif;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(21, auto);
+  text-decoration: none;
+}
+
+.list-product {
+  color: #F5F5F4;
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+/* Titulo Productos */
+.title-productos {
+  display: flex;
+  font-family: "Teko", sans-serif;
+  justify-content: center;
+  padding-top: 3%;
+  color: #F5F5F4;
+  transition: ease-out 0.4s;
+}
+.title-productos:hover {
+  color: #B3C19A;
+  font-size: 3em;
+  transition: scale(2.5);
+}
+
+.title-category {
+  display: flex;
+  font-family: "Teko", sans-serif;
+  justify-content: end;
+  padding-top: 3%;
+  padding-right: 9%;
+  color: #7D3F1F;
+  transition: ease-out 0.4s;
+  animation: show 6s infinite;
+  animation-fill-mode: both;
+  font-size: 5em;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+/* Medias Queryes Mobiles*/
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  /* Menu */
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+  }
+  header .ul__desktop {
+    display: none;
+  }
+  header .header-mobile {
+    display: flex;
+    justify-content: space-around;
+    height: var(--altura_header);
+    background-color: transparent;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header ol, header ul {
+    list-style: none;
+  }
+  header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+  }
+  header .menu_hamburguesa {
+    display: none;
+  }
+  header .menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    color: var(--color_blanco);
+    font-family: "Teko", sans-serif;
+    transition: ease-out 0.4s;
+    color: #EDE1A5;
+    font-size: 3.4em;
+    transition: scale(2.5);
+  }
+  header .list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+  }
+  header .ul_links {
+    width: 100%;
+    background-image: url(../multimedia/nutrire-fondo.png);
+    background-size: cover;
+    background-position: center;
+    /* top: var(--altura_header); */
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.5s;
+  }
+  header .link {
+    font-size: 2em;
+    color: #fff;
+  }
+  header .menu-title {
+    display: flex;
+    justify-content: center;
+  }
+  header .title {
+    display: none;
+  }
+  header .menu {
+    background: url(../multimedia/nutrire-fondo.png);
+    padding-inline: 0;
+    width: 100%;
+    height: 60%;
+  }
+  header .menu__list {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  /* Root Hamburguesa */
+  :root {
+    --color_primario: $color-orange;
+    --color_primario_suave: $color-green;
+    --color_blanco: $color-white;
+    --altura_header: 75px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+  }
+  /* INDEX */
+  /* Textos web */
+  .text-index {
+    padding-bottom: 50%;
+  }
+  .text-index .class-quienes {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .class-bienvenida {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+    padding-top: 5%;
+  }
+  .text-index .titulo2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo2 {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  .text-index .titulo3 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo3 {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+    color: #7D3F1F;
+  }
+  /* CONOCENOS */
+  /* Cuando arrancamos */
+  .arranque {
+    padding-bottom: 30%;
+  }
+  .arranque .cuando-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .arranque .texto {
+    text-align: justify;
+    font-style: italic;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Que nos motivo */
+  .motivo {
+    padding-bottom: 30%;
+  }
+  .motivo .que-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .motivo .texto-2 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Donde nos situamos */
+  .lugar {
+    padding-bottom: 20%;
+  }
+  .lugar .donde {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .lugar .texto-3 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Que Ofrecemos */
+  .que-2 {
+    padding-bottom: 20%;
+  }
+  .que-2 .ofrecemos {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .que-2 .texto-4 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Fin Textos web */
+  /* Slider box Novedades*/
+  .slider-box {
+    width: 90%;
+    height: 100vh;
+    margin: 2% auto 0;
+    overflow: hidden;
+  }
+  .slider-box .slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  .slider-box .slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+  }
+  .slider-box .texto-carousel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.7em;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    padding: 0 0;
+    top: 67%;
+    color: #7D3F1F;
+    background-color: rgba(255, 220, 190, 0.818);
+  }
+  .slider-box .texto-carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 2%;
+  }
+  .slider-box .slider-box img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .text-novedades1 {
+    font-size: 0.5em;
+  }
+  .ultimos {
+    text-align: center;
+    color: #7D3F1F;
+    font-size: 2em;
+  }
+  /* Lista productos */
+  .lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+  }
+  .list-product {
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    padding-right: 15px;
+  }
+  /* Container de Backgrounds Productos */
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 97%;
+    height: 92%;
+    background-color: #dbcdaf;
+    /* PRODUCTOS */
+  }
+  .contain:hover {
+    opacity: 0.8;
+  }
+  .contain .texto-1 {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 1%;
+    padding-right: 50px;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  .contain .text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    font-size: 1em;
+    padding-right: 50px;
+  }
+  .contain .photo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+  }
+  .title-text {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Titulo Productos */
+  .title-productos {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    justify-content: center;
+    padding-top: 2%;
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+  }
+  .title-productos:hover {
+    color: #B3C19A;
+    font-size: 2em;
+    transition: scale(2.5);
+  }
+  /* CONTACTO */
+  .formulario {
+    color: #F5F5F4;
+    background: linear-gradient(to bottom, #D2B48C, #B3C19A);
+    border-radius: 25px;
+  }
+  .formulario .form-contact {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    padding: 10px;
+  }
+  form {
+    background-color: transparent;
+    padding: 5% 0;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.6666666667);
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-instagram .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-instagram .nutrire {
+    padding-left: 10%;
+  }
+  .contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp .camila {
+    padding-left: 10%;
+  }
+  .contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp2 .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp2 .matias {
+    padding-left: 10%;
+  }
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Menu navegacion */
+    /* Lista ordenada Footer */
+    /* Fin lista ordenada */
+    /* NUTRIRE */
+    /* Iconos */
+    /* H2 SLOGAN-1 */
+    /* Fin de H2 SLOGAN-1 */
+    /* Contactos  */
+  }
+  footer .menu__navegacion {
+    color: #F5F5F4;
+    font-size: 0.8em;
+  }
+  footer .list-footer {
+    list-style-type: none;
+  }
+  footer .box-footer {
+    color: #F5F5F4;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.6em;
+  }
+  footer .title1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .title-1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+    color: #F5F5F4;
+    padding-inline: 15px;
+  }
+  footer .iconos {
+    display: flex;
+    gap: 10px;
+  }
+  footer .slogan-1 {
+    text-align: center;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #F5F5F4;
+    font-family: "Dancing Script", cursive;
+  }
+  footer .copyright {
+    font-size: 0.5em;
+  }
+  footer .contactos {
+    color: #F5F5F4;
+    font-size: 0.7em;
+  }
+  footer .contactos h3 {
+    font-size: 1.5em;
+  }
+  footer .numero {
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+    font-size: 0.6em;
+  }
+  footer .numero:hover {
+    color: #B2D6FF;
+    font-size: 0.6em;
+    transition: scale(2.5);
+  }
+}
+/* Medias Queryes Tablets*/
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  /* Menu */
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+  }
+  header .ul__desktop {
+    display: none;
+  }
+  header .header-mobile {
+    display: flex;
+    justify-content: space-around;
+    height: var(--altura_header);
+    background-color: transparent;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header ol, header ul {
+    list-style: none;
+  }
+  header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+  }
+  header .menu_hamburguesa {
+    display: none;
+  }
+  header .menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    color: var(--color_blanco);
+    font-family: "Teko", sans-serif;
+    transition: ease-out 0.4s;
+    color: #EDE1A5;
+    font-size: 3.4em;
+    transition: scale(2.5);
+  }
+  header .list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+  }
+  header .ul_links {
+    width: 100%;
+    background-image: url(../multimedia/nutrire-fondo.png);
+    background-size: cover;
+    background-position: center;
+    /* top: var(--altura_header); */
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.5s;
+  }
+  header .link {
+    font-size: 2em;
+    color: #fff;
+  }
+  header .menu-title {
+    display: flex;
+    justify-content: center;
+  }
+  header .title {
+    display: none;
+  }
+  header .menu {
+    background: url(../multimedia/nutrire-fondo.png);
+    padding-inline: 0;
+    width: 100%;
+    height: 60%;
+  }
+  header .menu__list {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  /* Root Hamburguesa */
+  :root {
+    --color_primario: $color-orange;
+    --color_primario_suave: $color-green;
+    --color_blanco: $color-white;
+    --altura_header: 75px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+  }
+  /* INDEX */
+  /* Textos web */
+  .text-index {
+    padding-bottom: 50%;
+  }
+  .text-index .class-quienes {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .class-bienvenida {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+    padding-top: 5%;
+  }
+  .text-index .titulo2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo2 {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  .text-index .titulo3 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo3 {
+    text-align: justify;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+    color: #7D3F1F;
+  }
+  /* CONOCENOS */
+  /* Cuando arrancamos */
+  .arranque {
+    padding-bottom: 30%;
+  }
+  .arranque .cuando-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 3%;
+    padding-top: 60px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .arranque .texto {
+    text-align: justify;
+    font-style: italic;
+    background-color: transparent;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Que nos motivo */
+  .motivo {
+    padding-bottom: 30%;
+  }
+  .motivo .que-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .motivo .texto-2 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Donde nos situamos */
+  .lugar {
+    padding-bottom: 20%;
+  }
+  .lugar .donde {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .lugar .texto-3 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Que Ofrecemos */
+  .que-2 {
+    padding-bottom: 20%;
+  }
+  .que-2 .ofrecemos {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-top: 60px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .que-2 .texto-4 {
+    text-align: justify;
+    background-color: transparent;
+    font-size: 0.9em;
+    padding-left: 3%;
+    padding-right: 5%;
+    color: #7D3F1F;
+  }
+  /* Fin Textos web */
+  /* Slider box Novedades*/
+  .slider-box {
+    width: 90%;
+    height: 100vh;
+    margin: 2% auto 0;
+    overflow: hidden;
+  }
+  .slider-box .slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  .slider-box .slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+  }
+  .slider-box .texto-carousel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8em;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    padding: 0 0;
+    top: 80%;
+    color: #7D3F1F;
+    background-color: rgba(255, 220, 190, 0.818);
+  }
+  .slider-box .texto-carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 2%;
+  }
+  .slider-box .slider-box img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  /* Lista productos */
+  .lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+  }
+  .list-product {
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    padding-right: 15px;
+  }
+  /* Container de Backgrounds Productos */
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 97%;
+    height: 92%;
+    background-color: #dbcdaf;
+    /* PRODUCTOS */
+  }
+  .contain:hover {
+    opacity: 0.8;
+  }
+  .contain .texto-1 {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 1%;
+    padding-right: 50px;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  .contain .text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    font-size: 1em;
+    padding-right: 50px;
+  }
+  .contain .photo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+  }
+  .title-text {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Titulo Productos */
+  .title-productos {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    justify-content: center;
+    padding-top: 2%;
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+  }
+  .title-productos:hover {
+    color: #B3C19A;
+    font-size: 2em;
+    transition: scale(2.5);
+  }
+  /* CONTACTO */
+  .formulario {
+    color: #F5F5F4;
+    background: linear-gradient(to bottom, #D2B48C, #B3C19A);
+    border-radius: 25px;
+  }
+  .formulario .form-contact {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    padding: 10px;
+  }
+  form {
+    background-color: transparent;
+    padding: 5% 0;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.6666666667);
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-instagram .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-instagram .nutrire {
+    padding-left: 10%;
+  }
+  .contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp .camila {
+    padding-left: 10%;
+  }
+  .contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp2 .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp2 .matias {
+    padding-left: 10%;
+  }
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Menu navegacion */
+    /* Lista ordenada Footer */
+    /* Fin lista ordenada */
+    /* NUTRIRE */
+    /* Iconos */
+    /* H2 SLOGAN-1 */
+    /* Fin de H2 SLOGAN-1 */
+    /* Contactos  */
+  }
+  footer .menu__navegacion {
+    color: #F5F5F4;
+    font-size: 0.8em;
+  }
+  footer .list-footer {
+    list-style-type: none;
+  }
+  footer .box-footer {
+    color: #F5F5F4;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.6em;
+  }
+  footer .title1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .title-1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+    color: #F5F5F4;
+    padding-inline: 15px;
+  }
+  footer .iconos {
+    display: flex;
+    gap: 10px;
+  }
+  footer .slogan-1 {
+    text-align: center;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #F5F5F4;
+    font-family: "Dancing Script", cursive;
+  }
+  footer .contactos {
+    color: #F5F5F4;
+    font-size: 0.7em;
+  }
+  footer .contactos h3 {
+    font-size: 1.5em;
+  }
+  footer .numero {
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+    font-size: 0.6em;
+  }
+  footer .numero:hover {
+    color: #B2D6FF;
+    font-size: 0.6em;
+    transition: scale(2.5);
+  }
+}
+/* Medias Queryes +850px a 1400px*/
+@media only screen and (min-width: 801px) and (max-width: 1400px) {
+  /* Menu */
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 30;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+    /* NUTRIRE */
+  }
+  header .menu {
+    background: url(../multimedia/nutrire-fondo.png);
+    padding-inline: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  header .menu__list {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+  }
+  header .menu__item {
+    display: inline-block;
+    padding: 3px 25px;
+  }
+  header .menu__link {
+    color: #EDE1A5;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    transition: ease-out 0.4s;
+  }
+  header .menu__link:hover {
+    color: #F5F5F4;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+  header .title {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    transition: ease-out 0.4s;
+    color: #000;
+  }
+  header .title:hover {
+    color: #EDE1A5;
+    font-size: 5.4em;
+    transition: scale(2.5);
+  }
+  header .link__title {
+    text-decoration: none;
+  }
+  header .header-mobile {
+    display: none;
+  }
+  .menu__link {
+    color: #EDE1A5;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    transition: ease-out 0.4s;
+  }
+  .menu__link:hover {
+    color: #F5F5F4;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+  /* INDEX */
+  /* Textos web */
+  .text-index {
+    padding-bottom: 5%;
+  }
+  .text-index .class-quienes {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 7%;
+    padding-top: 100px;
+    color: #7D3F1F;
+  }
+  .text-index .class-bienvenida {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 40%;
+    letter-spacing: 1px;
+    padding-left: 7%;
+    background-color: transparent;
+    padding-right: 55%;
+    color: #7D3F1F;
+  }
+  .text-index .titulo2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 50%;
+    padding-top: 100px;
+    background-color: transparent;
+    bottom: 25%;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo2 {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 7%;
+    letter-spacing: 1px;
+    padding-left: 50%;
+    background-color: transparent;
+    bottom: 20%;
+    color: #7D3F1F;
+  }
+  .text-index .titulo3 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-left: 7%;
+    padding-top: 10%;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .text-index .parrafo3 {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 40%;
+    letter-spacing: 1px;
+    padding-left: 7%;
+    background-color: transparent;
+    padding-right: 55%;
+    color: #7D3F1F;
+    padding-bottom: 5%;
+  }
+  /* CONOCENOS */
+  /* Cuando Arrancamos */
+  .arranque {
+    padding-bottom: 5%;
+  }
+  .arranque .cuando-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 7%;
+    padding-top: 100px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .arranque .texto {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 40%;
+    letter-spacing: 1px;
+    padding-left: 7%;
+    background-color: transparent;
+    padding-right: 55%;
+    color: #7D3F1F;
+  }
+  /* Que nos motivo */
+  .motivo {
+    padding-bottom: 5%;
+  }
+  .motivo .que-1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 50%;
+    padding-top: 100px;
+    background-color: transparent;
+    bottom: 25%;
+    color: #7D3F1F;
+  }
+  .motivo .texto-2 {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 7%;
+    letter-spacing: 1px;
+    padding-left: 50%;
+    background-color: transparent;
+    bottom: 20%;
+    color: #7D3F1F;
+  }
+  .motivo .menu__link {
+    color: #EDE1A5;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    transition: ease-out 0.4s;
+  }
+  .motivo .menu__link:hover {
+    color: #F5F5F4;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+  /* Donde nos situamos */
+  .lugar {
+    padding-bottom: 5%;
+  }
+  .lugar .donde {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 7%;
+    padding-top: 150px;
+    background-color: transparent;
+    color: #7D3F1F;
+  }
+  .lugar .texto-3 {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 40%;
+    letter-spacing: 1px;
+    padding-left: 7%;
+    background-color: transparent;
+    padding-right: 55%;
+    color: #7D3F1F;
+  }
+  /* Que Ofrecemos */
+  .que-2 {
+    padding-bottom: 5%;
+  }
+  .que-2 .ofrecemos {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.3em;
+    padding-left: 50%;
+    padding-top: 100px;
+    background-color: transparent;
+    bottom: 25%;
+    color: #7D3F1F;
+  }
+  .que-2 .texto-4 {
+    text-align: justify;
+    font-style: italic;
+    padding-inline: 7%;
+    letter-spacing: 1px;
+    padding-left: 50%;
+    background-color: transparent;
+    bottom: 20%;
+    color: #7D3F1F;
+  }
+  .que-2 .menu__link {
+    color: #EDE1A5;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    transition: ease-out 0.4s;
+  }
+  .que-2 .menu__link:hover {
+    color: #F5F5F4;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+  .ultimos {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    color: #7D3F1F;
+  }
+  /* Lista productos */
+  .lista-productos {
+    display: grid;
+    flex-direction: column;
+    padding-left: 9%;
+    padding-top: 5%;
+    font-family: "Teko", sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(21, auto);
+    text-decoration: none;
+  }
+  .list-product {
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    font-size: 1.4em;
+  }
+  /* Container de Backgrounds Productos */
+  .contain {
+    display: flex;
+    padding: 25px;
+    width: 90%;
+    height: 95%;
+    background-color: #dbcdaf;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    /* PRODUCTOS */
+  }
+  .contain:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .contain .title-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain .texto-1 {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    padding-bottom: 2%;
+    flex-direction: column;
+  }
+  .contain .text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #F5F5F4;
+    font-family: "Teko", sans-serif;
+    font-size: 1.2em;
+  }
+  .contain .photo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
+    position: relative;
+  }
+  /* Titulo Productos */
+  .title-productos {
+    display: flex;
+    font-family: "Teko", sans-serif;
+    justify-content: center;
+    padding-top: 3%;
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+  }
+  .title-productos:hover {
+    color: #B3C19A;
+    font-size: 3em;
+    transition: scale(2.5);
+  }
+  /* CONTACTO */
+  .formulario {
+    color: #F5F5F4;
+    background: linear-gradient(to bottom, #D2B48C, #B3C19A);
+    border-radius: 25px;
+  }
+  .formulario .form-contact {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    padding: 10px;
+  }
+  form {
+    background-color: transparent;
+    padding: 5% 0;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.6666666667);
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .contact-instagram {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-instagram .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-instagram .nutrire {
+    padding-left: 10%;
+  }
+  .contact-whatsapp {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp .camila {
+    padding-left: 10%;
+  }
+  .contact-whatsapp2 {
+    display: flex;
+    justify-content: center;
+    color: #EDE1A5;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 27%;
+  }
+  .contact-whatsapp2 .link-contact {
+    display: flex;
+    text-decoration: none;
+    color: #EDE1A5;
+  }
+  .contact-whatsapp2 .matias {
+    padding-left: 10%;
+  }
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Menu navegacion */
+    /* Lista ordenada Footer */
+    /* Fin lista ordenada */
+    /* NUTRIRE */
+    /* Iconos */
+    /* H2 SLOGAN-1 */
+    /* Fin de H2 SLOGAN-1 */
+    /* Contactos  */
+    /* Fin lista ordenada */
+    /* NUTRIRE */
+    /* Iconos */
+    /* H2 SLOGAN-1 */
+    /* Fin de H2 SLOGAN-1 */
+    /* Contactos  */
+  }
+  footer .menu__navegacion {
+    color: #F5F5F4;
+  }
+  footer .list-footer {
+    list-style-type: none;
+  }
+  footer .box-footer {
+    color: #F5F5F4;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+  }
+  footer .title1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: #F5F5F4;
+    padding-inline: 15px;
+  }
+  footer .iconos {
+    display: flex;
+    gap: 20px;
+  }
+  footer .slogan-1 {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: #F5F5F4;
+    font-family: "Dancing Script", cursive;
+  }
+  footer .contactos {
+    color: #F5F5F4;
+  }
+  footer .numero {
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+  }
+  footer .numero:hover {
+    color: #B2D6FF;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+  footer .box-footer {
+    color: #F5F5F4;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+  }
+  footer .title1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .title-1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: "Teko", sans-serif;
+    color: #F5F5F4;
+    padding-inline: 15px;
+  }
+  footer .iconos {
+    display: flex;
+    gap: 20px;
+  }
+  footer .slogan-1 {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: #F5F5F4;
+    font-family: "Dancing Script", cursive;
+  }
+  footer .contactos {
+    color: #F5F5F4;
+  }
+  footer .numero {
+    color: #F5F5F4;
+    transition: ease-out 0.4s;
+  }
+  footer .numero:hover {
+    color: #B2D6FF;
+    font-size: 1.2em;
+    transition: scale(2.5);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

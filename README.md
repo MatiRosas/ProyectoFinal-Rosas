@@ -5,7 +5,7 @@
 
 
 ##### Desarrollo Web - Comisión 57685
-* Alumno: Rosas Castaño, Matías
-* Profesor: Alarcón, Fernando
-* Tutor: Marino, Facundo
+* *Alumno*: Rosas Castaño, Matías
+* *Profesor*: Alarcón, Fernando
+* *Tutor*: Marino, Facundo
 
